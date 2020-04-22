@@ -7,14 +7,7 @@ public class Exports {
         CSVParser parser = fr.getCSVParser();
         
         /* INFO OF COUNTIES
-        for (CSVRecord record : parser)
-        {
-            parser = fr.getCSVParser();
-            String con = record.get("Country");
-            String res = countryInfo(parser, con);
-            System.out.println(res);
-        }*/
-        /* parser = fr.getCSVParser();
+        parser = fr.getCSVParser();
         String res = countryInfo(parser, "Nauru");
         System.out.println(res);
          */
