@@ -35,12 +35,10 @@ public class Exports {
     {
         String goods = " ";
         String dollars = " ";
-        Boolean is = false;
         for (CSVRecord record : parser)
         {
             if (record.get("Country").equals(country))
             {
-                is = true;
                 dollars = record.get("Value (dollars)");
                 goods += (record.get("Exports")+ ", ");
                 return (country + ": " + goods + ": " + dollars);
@@ -88,7 +86,6 @@ public class Exports {
                System.out.println(record.get("Country")+" "+dollars);
            }
         }
-        System.out.println("end");
     }
 }
 
